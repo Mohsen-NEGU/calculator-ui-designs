@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeuomorphism calculator</title>
+    <link rel="stylesheet" href="css/skeuomorphism.css">
+</head>
+
+<body>
+    <div class="calc">
+        <div class="display">
+            <div class="bu">
+                <div class="bu-text">CALC-80</div>
+                <div class="bu-wrapper">
+                    <span class="bu-raido"></span>
+                    <span class="bu-raido"></span>
+                    <span class="bu-raido"></span>
+                    <span class="bu-raido"></span>
+                </div>
+                <!-- <div class="history">128 × 4</div> -->
+                <input class="result" id="result" type="text" placeholder="0">
+                <div class="fream-border"></div>
+            </div>
+        </div>
+        <div class="keys">
+            <button onclick="clearAll()" class="key ac">AC</button>
+            <button onclick="inputNumber" class="key fn">±</button>
+            <button onclick="inputNumber" class="key fn">%</button>
+            <button onclick="setOperator('÷')" class="key op">÷</button>
+
+            <button onclick="inputNumber(7)" class="key">7</button>
+            <button onclick="inputNumber(8)" class="key">8</button>
+            <button onclick="inputNumber(9)" class="key">9</button>
+            <button onclick="setOperator('×')" class="key op">×</button>
+
+            <button onclick="inputNumber(4)" class="key">4</button>
+            <button onclick="inputNumber(5)" class="key">5</button>
+            <button onclick="inputNumber(6)" class="key">6</button>
+            <button onclick="setOperator('-')" class="key op">-</button>
+
+            <button onclick="inputNumber(1)" class="key">1</button>
+            <button onclick="inputNumber(2)" class="key">2</button>
+            <button onclick="inputNumber(3)" class="key">3</button>
+            <button onclick="setOperator('+')" class="key op">+</button>
+
+            <button onclick="inputNumber(0)" class="key zero">0</button>
+            <button onclick="inputNumber" class="key">.</button>
+            <button onclick="calculate()" class="key eq">=</button>
+        </div>
+    </div>
+</body>
+<script src="js/skeumorphism.js"></script>
+
+</html>
